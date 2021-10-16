@@ -155,7 +155,7 @@ namespace Lista_de_exercícios
                         if (a5.Tipo == "Gato") tlGato++;
                         if (a5.Tipo == "Peixe") tlPeixe++;
 
-                        Console.WriteLine("O total de animais é Cachorros: {0}, Gatos: {1} e Peixes: {3}", tlCachorro, tlGato, tlPeixe);
+                        Console.WriteLine("O total de animais é Cachorros: "+tlCachorro+", Gatos: "+tlGato+" e Peixes: "+tlPeixe);
                         break;
                     case 6:
                         validacao = false;
