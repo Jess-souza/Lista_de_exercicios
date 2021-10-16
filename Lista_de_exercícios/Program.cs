@@ -46,6 +46,18 @@ namespace Lista_de_exercícios
                             Console.WriteLine("O resultado do IMC: {0} pessoa acima do peso.", Math.Round(result, 2));
                         }
                         break;
+                    case 2:
+                        float salf, salm, total;
+
+                        Console.WriteLine("Digite o valor do salário do funcionário: ");
+                        salf = float.Parse(Console.ReadLine());
+                        Console.WriteLine("Digite o valor do salário mínimo: ");
+                        salm = float.Parse(Console.ReadLine());
+
+                        total = salf / salm;
+
+                        Console.WriteLine("O funcionário recebe o valor correspondete a {0} salário(s) mínimo(s).", Math.Round(total, 1));
+                        break;
                 }
                 Console.WriteLine("Aperte Enter para continuar");
                 Console.ReadLine();
