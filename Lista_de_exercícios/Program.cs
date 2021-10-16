@@ -55,7 +55,6 @@ namespace Lista_de_exercícios
                         salm = float.Parse(Console.ReadLine());
 
                         total = salf / salm;
-
                         Console.WriteLine("O funcionário recebe o valor correspondete a {0} salário(s) mínimo(s).", Math.Round(total, 1));
                         break;
                     case 3:
@@ -65,10 +64,39 @@ namespace Lista_de_exercícios
                         raio = double.Parse(Console.ReadLine());
 
                         volume = 4 * 3.14 * raio * raio * raio / 3;
-
                         Console.WriteLine("O valor do volume conforme raio informado é de {0}:", Math.Round(volume, 2));
                         break;
                     case 4:
+                        float nota1, nota2, nota3, media, notae, mediae;
+
+                        Console.WriteLine("Informe a primeira nota: ");
+                        nota1 = float.Parse(Console.ReadLine());
+                        Console.WriteLine("Informe a segunda nota: ");
+                        nota2 = float.Parse(Console.ReadLine());
+                        Console.WriteLine("Informe a terceira nota: ");
+                        nota3 = float.Parse(Console.ReadLine());
+
+                        media = (nota1 + nota2 + nota3) / 3;
+                        if (media >= 7)
+                        {
+                            Console.WriteLine("Aprovado, média {0}", Math.Round(media, 1));
+                        }
+                        else
+                        {
+                            Console.WriteLine("Informe a nota do exame: ");
+                            notae = float.Parse(Console.ReadLine());
+
+                            mediae = (nota1 + nota2 + nota3 + notae) / 4;
+
+                            if (mediae >= 5)
+                            {
+                                Console.WriteLine("Aprovado em exame, média {0}", Math.Round(mediae, 1));
+                            }
+                            else
+                            {
+                                Console.WriteLine("Reprovado, média {0}", Math.Round(mediae, 1));
+                            }
+                        }
                         break;
                 }
                 Console.WriteLine("Aperte Enter para continuar");
